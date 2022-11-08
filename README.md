@@ -1,2 +1,3 @@
 # LogiGear_Selenium_lv1
-Bài của Nhi Nguyễn mà Phúc Nguyễn làm 
+Nhi Nguyen 8297
+Selenium level 1 framework
