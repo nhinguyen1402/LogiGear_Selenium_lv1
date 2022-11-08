@@ -1,7 +1,6 @@
 package org.railway.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.railway.common.Constant;
 import org.railway.driver.WebDriverManager;
