@@ -13,8 +13,7 @@ public class HomePage extends BasePage{
         return driver.findElement(linkCreateAcc);
     }
 
-    public HomePage open() {
-        WebDriverManager.getDriver().navigate().to(Constant.RAILWAY_URL);
-        return this;
+    public void openHomePage() {
+        WebDriverManager.getDriver().navigate().to(Constant.RAILWAY_HOME_URL);
     }
 }

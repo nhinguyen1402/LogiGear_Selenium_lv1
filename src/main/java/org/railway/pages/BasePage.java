@@ -64,9 +64,8 @@ public class BasePage {
         return driver.findElement(lblWelcomeMsg);
     }
 
-    public LoginPage goToLoginPage() {
+    public void goToLoginPage() {
         this.getTabLogin().click();
-        return new LoginPage();
     }
     public String getWelcomeMsg() {
         return this.getLblWelcomeMsg().getText();

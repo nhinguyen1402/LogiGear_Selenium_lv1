@@ -11,6 +11,7 @@ public class BaseTest {
     public void beforeMethod() {
         System.out.println("Pre-Condition");
         driver = WebDriverManager.getDriver();
+
     }
 
     @AfterMethod

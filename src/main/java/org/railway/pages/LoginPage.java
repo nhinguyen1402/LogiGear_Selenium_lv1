@@ -42,4 +42,11 @@ public class LoginPage extends BasePage {
         getTxtPassword().sendKeys(pass);
         getBtnLogin().click();
     }
+
+    public String getErrorMsg() {
+        return this.getLoginErrorMsg().getText();
+    }
+    public String getUserNameMsg() {
+        return this.getUserNameErrorMsg().getText();
+    }
 }
