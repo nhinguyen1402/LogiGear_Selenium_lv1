@@ -11,7 +11,7 @@ public class WebDriverManager {
         } else return driver;
     }
 
-    public static void openPage(String url){
-        driver.navigate().to(url);
-    }
+//    public void openPage(String url){
+//        Constant.DRIVER.navigate().to(url);
+//    }
 }

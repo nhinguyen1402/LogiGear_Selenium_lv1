@@ -1,34 +1,34 @@
 package org.railway.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.railway.utils.Constant;
 
 public class BookTicketPage extends BasePage {
-    private By selectDate = By.xpath("//select[@name='Date']");
-    private By selectDepartStation = By.xpath("//select[@name='DepartStation']");
-    private By selectArriveStation = By.xpath("//select[@name='ArriveStation']");
-    private By selectSeatType = By.xpath("//select[@name='SeatType']");
-    private By selectTicketAmount = By.xpath("//select[@name='TicketAmount']");
-    private By btnBook = By.xpath("//input[@value='Book ticket']");
+    private final By selectDate = By.xpath("//select[@name='Date']");
+    private final By selectDepartStation = By.xpath("//select[@name='DepartStation']");
+    private final By selectArriveStation = By.xpath("//select[@name='ArriveStation']");
+    private final By selectSeatType = By.xpath("//select[@name='SeatType']");
+    private final By selectTicketAmount = By.xpath("//select[@name='TicketAmount']");
+    private final By btnBook = By.xpath("//input[@value='Book ticket']");
 
     public WebElement getSelectDate() {
-        return driver.findElement(selectDate);
+        return Constant.DRIVER.findElement(selectDate);
     }
     public WebElement getSelectDepartStation() {
-        return driver.findElement(selectDepartStation);
+        return Constant.DRIVER.findElement(selectDepartStation);
     }
     public WebElement getSelectArriveStation() {
-        return driver.findElement(selectArriveStation);
+        return Constant.DRIVER.findElement(selectArriveStation);
     }
     public WebElement getSelectSeatType() {
-        return driver.findElement(selectSeatType);
+        return Constant.DRIVER.findElement(selectSeatType);
     }
     public WebElement getSelectTicketAmount() {
-        return driver.findElement(selectTicketAmount);
+        return Constant.DRIVER.findElement(selectTicketAmount);
     }
     public WebElement getBtnBook() {
-        return driver.findElement(btnBook);
+        return Constant.DRIVER.findElement(btnBook);
     }
     public void selectBtnBook() {
         getBtnBook().click();

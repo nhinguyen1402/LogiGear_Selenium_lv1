@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation Selenium">
+    <test name="Test-Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="TC01"/>
+            <class name="TC02"/>
+            <class name="TC03"/>
+            <class name="TC04"/>
+            <class name="TC05"/>
+            <class name="TC06"/>
+            <class name="TC07"/>
+        </classes>
+    </test>
+</suite>

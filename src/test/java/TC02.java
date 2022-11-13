@@ -1,5 +1,4 @@
-import org.railway.common.Constant;
-import org.railway.pages.HomePage;
+import org.railway.utils.Constant;
 import org.railway.pages.LoginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;

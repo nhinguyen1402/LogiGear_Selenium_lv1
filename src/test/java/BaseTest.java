@@ -1,23 +1,31 @@
-import org.openqa.selenium.WebDriver;
-import org.railway.common.Constant;
-import org.railway.driver.WebDriverManager;
+import org.railway.driver.DriverHelper;
+import org.railway.utils.Constant;
+import org.railway.utils.Log4j;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 
 public class BaseTest {
-    protected WebDriver driver;
-
+    @Parameters("browser")
     @BeforeMethod
-    public void beforeMethod() {
-        System.out.println("Pre-Condition");
-        driver = WebDriverManager.getDriver();
-        WebDriverManager.openPage(Constant.RAILWAY_HOME_URL);
+    public void beforeMethod(String browser) {
+        if (browser.equals("chrome")) {
+            DriverHelper.openChromeBrowser();
+        } else {
+            if (browser.equals("firefox")) {
+                DriverHelper.openFirefoxBrowser();
+            } else if (browser.equals("edge")) {
+                DriverHelper.openEdgeBrowser();
+            } else DriverHelper.openChromeBrowser();
+        }
+        Constant.DRIVER.manage().window().maximize();
+        DriverHelper.navigate(Constant.RAILWAY_HOME_URL);
     }
 
     @AfterMethod
     public void afterMethod() {
-        System.out.println("Post-Condition");
-        driver.quit();
+        Log4j.info("Close browser\n");
+        Constant.DRIVER.quit();
     }
 }
