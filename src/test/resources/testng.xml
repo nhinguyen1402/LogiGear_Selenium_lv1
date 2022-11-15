@@ -13,4 +13,16 @@
             <class name="TC07"/>
         </classes>
     </test>
+    <test name="Test-Edge">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="TC01"/>
+            <class name="TC02"/>
+                        <class name="TC03"/>
+                        <class name="TC04"/>
+                        <class name="TC05"/>
+                        <class name="TC06"/>
+                        <class name="TC07"/>
+        </classes>
+    </test>
 </suite>

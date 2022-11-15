@@ -10,7 +10,7 @@ public class TC03 extends BaseTest{
         loginPage.goToLoginPage();
         loginPage.login(Constant.USERNAME, Constant.INVALID_PASSWORD);
         String actualMsg = loginPage.getErrorMsg();
-        String expectedMsg = "There was a problem with your login and/or errors exist in your form.";
+        String expectedMsg = "Invalid username or password. Please try again.";
         Assert.assertEquals(actualMsg, expectedMsg, "There was a problem with your login and/or errors exist in your form.");
     }
 }

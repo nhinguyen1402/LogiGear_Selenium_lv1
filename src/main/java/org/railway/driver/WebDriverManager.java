@@ -10,8 +10,4 @@ public class WebDriverManager {
             return driver = io.github.bonigarcia.wdm.WebDriverManager.chromedriver().create();
         } else return driver;
     }
-
-//    public void openPage(String url){
-//        Constant.DRIVER.navigate().to(url);
-//    }
 }
