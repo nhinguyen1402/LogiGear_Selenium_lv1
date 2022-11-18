@@ -7,7 +7,7 @@ import org.railway.utils.Constant;
 public class HomePage extends BasePage{
     private final By linkCreateAcc = By.xpath("//div[@id='content']//following::a[contains(@href,'Account')]");
 
-    public WebElement getLinkCreateAcc() {
+    private WebElement getLinkCreateAcc() {
         return Constant.DRIVER.findElement(linkCreateAcc);
     }
 }
