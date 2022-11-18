@@ -23,43 +23,43 @@ public class BasePage {
 
     private final By pageTitle = By.cssSelector("#content h1");
 
-    public WebElement getPageTitle() {
+    private WebElement getPageTitle() {
         return Constant.DRIVER.findElement(pageTitle);
     }
-    public WebElement getTabHome() {
+    private WebElement getTabHome() {
         return Constant.DRIVER.findElement(tabHome);
     }
-    public WebElement getTabFAQ() {
+    private WebElement getTabFAQ() {
         return Constant.DRIVER.findElement(tabFAQ);
     }
-    public WebElement getTabContact() {
+    private WebElement getTabContact() {
         return Constant.DRIVER.findElement(tabContact);
     }
-    public WebElement getTabTimetable() {
+    private WebElement getTabTimetable() {
         return Constant.DRIVER.findElement(tabTimetable);
     }
-    public WebElement getTabTicketPrice() {
+    private WebElement getTabTicketPrice() {
         return Constant.DRIVER.findElement(tabTicketPrice);
     }
-    public WebElement getTabBookTicket() {
+    private WebElement getTabBookTicket() {
         return Constant.DRIVER.findElement(tabBookTicket);
     }
-    public WebElement getTabChangePassword() {
+    private WebElement getTabChangePassword() {
         return Constant.DRIVER.findElement(tabChangePassword);
     }
-    public WebElement getTabMyTicket() {
+    private WebElement getTabMyTicket() {
         return Constant.DRIVER.findElement(tabMyTicket);
     }
-    public WebElement getTabRegister() {
+    private WebElement getTabRegister() {
         return Constant.DRIVER.findElement(tabRegister);
     }
-    public WebElement getTabLogout() {
+    private WebElement getTabLogout() {
         return Constant.DRIVER.findElement(tabLogout);
     }
-    public WebElement getTabLogin() {
+    private WebElement getTabLogin() {
         return Constant.DRIVER.findElement(tabLogin);
     }
-    public WebElement getLblWelcomeMsg() {
+    private WebElement getLblWelcomeMsg() {
         return Constant.DRIVER.findElement(lblWelcomeMsg);
     }
 

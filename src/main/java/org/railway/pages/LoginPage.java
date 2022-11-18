@@ -15,35 +15,26 @@ public class LoginPage extends BasePage {
     private final By userNameErrorMsg = By.xpath("//li[@class='username']//label[@class='validation-error']");
     private final By passWordErrorMsg = By.xpath("//li[@class='password']//label[@class='validation-error']");
 
-    public WebElement getTxtUserName() {
+    private WebElement getTxtUserName() {
         return Constant.DRIVER.findElement(txtUserName);
     }
-
-    public WebElement getTxtPassword() {
+    private WebElement getTxtPassword() {
         return Constant.DRIVER.findElement(txtPassword);
     }
-
-    public WebElement getBtnLogin() {
+    private WebElement getBtnLogin() {
         return Constant.DRIVER.findElement(btnLogin);
     }
-
-    public WebElement getLinkRegister() {
+    private WebElement getLinkRegister() {
         return Constant.DRIVER.findElement(linkRegister);
     }
-
-    public WebElement getLinkForgotPass() {
+    private WebElement getLinkForgotPass() {
         return Constant.DRIVER.findElement(linkForgotPass);
     }
-
-    public WebElement getLoginErrorMsg() {
-        return Constant.DRIVER.findElement(loginErrorMsg);
-    }
-
-    public WebElement getUserNameErrorMsg() {
+    private WebElement getLoginErrorMsg() { return Constant.DRIVER.findElement(loginErrorMsg); }
+    private WebElement getUserNameErrorMsg() {
         return Constant.DRIVER.findElement(userNameErrorMsg);
     }
-
-    public WebElement getPassWordErrorMsg() {
+    private WebElement getPassWordErrorMsg() {
         return Constant.DRIVER.findElement(passWordErrorMsg);
     }
 
@@ -54,6 +45,7 @@ public class LoginPage extends BasePage {
         Log4j.info("Input to Password text box: " + pass);
         getTxtPassword().sendKeys(pass);
 
+        Log4j.info("Click on Login Button");
         getBtnLogin().click();
     }
 

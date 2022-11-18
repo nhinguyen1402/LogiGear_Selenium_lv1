@@ -3,6 +3,7 @@ package org.railway.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.railway.utils.Constant;
+import org.railway.utils.Log4j;
 
 public class ChangePasswordPage extends BasePage{
     private final By txtCurrentPass = By.xpath("//input[@id='currentPassword']");
@@ -12,33 +13,44 @@ public class ChangePasswordPage extends BasePage{
     private final By registerErrorMsg = By.xpath("//p[@class='message error']");
     private final By currentPassErrorMsg = By.xpath("//li[@class='current-password']//label[@class='validation-error']");
     private final By newPassErrorMsg = By.xpath("//li[@class='new-password']//label[@class='validation-error']");
-    private final By changePasswordTitle = By.cssSelector("#content h1");
-    public WebElement getTxtCurrentPass() {
+    private final By changePassMsg = By.cssSelector("p.message.success");
+
+    private WebElement getTxtCurrentPass() {
         return Constant.DRIVER.findElement(txtCurrentPass);
     }
-    public WebElement getTxtNewPass() {
+    private WebElement getTxtNewPass() {
         return Constant.DRIVER.findElement(txtNewPass);
     }
-    public WebElement getTxtConfirmPass() {
+    private WebElement getTxtConfirmPass() {
         return Constant.DRIVER.findElement(txtConfirmPass);
     }
-    public WebElement getBntChangePass() {
+    private WebElement getBntChangePass() {
         return Constant.DRIVER.findElement(bntChangePass);
     }
-    public WebElement getRegisterErrorMsg() {
+    private WebElement getRegisterErrorMsg() {
         return Constant.DRIVER.findElement(registerErrorMsg);
     }
-    public WebElement getCurrentPassErrorMsg() {
+    private WebElement getCurrentPassErrorMsg() {
         return Constant.DRIVER.findElement(currentPassErrorMsg);
     }
-    public WebElement getNewPassErrorMsg() {
+    private WebElement getNewPassErrorMsg() {
         return Constant.DRIVER.findElement(newPassErrorMsg);
+    }
+    private WebElement getChangePassMsg() {
+        return Constant.DRIVER.findElement(changePassMsg);
     }
 
     public void changePass(String currentPass, String newPass, String confirmPass) {
+        Log4j.info("Input to Current Password: text box: " + currentPass);
         getTxtCurrentPass().sendKeys(currentPass);
+        Log4j.info("Input to New Password:: text box: " + newPass);
         getTxtNewPass().sendKeys(newPass);
+        Log4j.info("Input to Confirm Password:: text box: " + confirmPass);
         getTxtConfirmPass().sendKeys(confirmPass);
+        Log4j.info("Click on Change Password Button");
         getBntChangePass().click();
+    }
+    public String getChangePassSuccessMsg() {
+        return this.getChangePassMsg().getText();
     }
 }

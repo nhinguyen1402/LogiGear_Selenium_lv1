@@ -1,4 +1,4 @@
 package org.railway.pages;
 
-public class MyTicketPage {
+public class MyTicketPage extends BasePage{
 }
