@@ -48,12 +48,8 @@ public class LoginPage extends BasePage {
     }
 
     public void login(String username, String pass) {
-        Log4j.info("Input to User Name text box: " + username);
         getTxtUserName().sendKeys(username);
-
-        Log4j.info("Input to Password text box: " + pass);
         getTxtPassword().sendKeys(pass);
-
         getBtnLogin().click();
     }
 

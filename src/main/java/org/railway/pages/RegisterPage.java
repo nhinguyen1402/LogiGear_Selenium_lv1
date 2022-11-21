@@ -69,15 +69,10 @@ public class RegisterPage extends BasePage {
         return getSuccessRegisterMsg().getText();
     }
     public void register(String email, String password, String confirmPassword, String pid) {
-        Log4j.info("Input to Email text box: " + email);
         getTxtUserName().sendKeys(email);
-        Log4j.info("Input to Password text box: " + password);
         getTxtPassword().sendKeys(password);
-        Log4j.info("Input to Confirm Password text box: " + confirmPassword);
         getTxtConfirmPass().sendKeys(confirmPassword);
-        Log4j.info("Input to PID text box: " + pid);
         getTxtPassPort().sendKeys(pid);
-        Log4j.info("Click on Register Button");
         getBtnRegister().click();
     }
 }

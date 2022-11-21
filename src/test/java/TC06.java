@@ -1,12 +1,11 @@
 import org.railway.pages.HomePage;
 import org.railway.pages.LoginPage;
 import org.railway.utils.ConfigLoader;
+import org.railway.utils.Constant;
 import org.railway.utils.Log4j;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static org.railway.utils.Constant.PASSWORD;
-import static org.railway.utils.Constant.USERNAME;
 
 public class TC06 extends BaseTest {
     LoginPage loginPage = new LoginPage();
@@ -14,11 +13,14 @@ public class TC06 extends BaseTest {
 
     @Test(priority = 1, testName = "TC_006", description = "Additional pages display once user logged in")
     public void testcase006() {
-        String username = ConfigLoader.getInstance().getPropertyByKey(USERNAME);
-        String password = ConfigLoader.getInstance().getPropertyByKey(PASSWORD);
+        String username = Constant.USERNAME;
+        String password = Constant.PASSWORD;
 
         Log4j.header("Testcase 006");
+        Log4j.info("Go to Login page");
         homePage.goToLoginPage();
+
+        Log4j.info("Login with Name: " + username + " and password: "+password);
         loginPage.login(username, password);
 
         Log4j.info("Step: Look at My Ticket tab is displayed");

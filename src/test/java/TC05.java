@@ -1,17 +1,16 @@
 import org.railway.pages.LoginPage;
-import org.railway.utils.ConfigLoader;
+import org.railway.utils.Constant;
 import org.railway.utils.Log4j;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static org.railway.utils.Constant.USERNAME;
 
 public class TC05 extends BaseTest {
     LoginPage loginPage = new LoginPage();
 
     @Test(priority = 1, testName = "TC_005", description = "System shows message when user enters wrong password several times")
     public void testcase005() {
-        String username = ConfigLoader.getInstance().getPropertyByKey(USERNAME);
+        String username = Constant.USERNAME;
 
         Log4j.header("Testcase 005");
         loginPage.goToLoginPage();
@@ -30,7 +29,7 @@ public class TC05 extends BaseTest {
 
         String actualMsg = loginPage.getErrorMsg();
         String expectedMsg = "There was a problem with your login and/or errors exist in your form.";
-
+        Log4j.info("Verify that Error message is displayed.");
         Assert.assertEquals(actualMsg, expectedMsg, "Login Error message is not displayed as expected");
     }
 }

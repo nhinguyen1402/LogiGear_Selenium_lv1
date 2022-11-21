@@ -10,14 +10,16 @@ public class BaseTest {
     @Parameters("browser")
     @BeforeMethod
     public void beforeMethod(String browser) {
-        if (browser.equals("chrome")) {
-            DriverHelper.openChromeBrowser();
-        } else {
-            if (browser.equals("firefox")) {
+        switch (browser) {
+            case "firefox":
                 DriverHelper.openFirefoxBrowser();
-            } else if (browser.equals("edge")) {
+                break;
+            case "edge":
                 DriverHelper.openEdgeBrowser();
-            } else DriverHelper.openChromeBrowser();
+                break;
+            default:
+                DriverHelper.openChromeBrowser();
+                break;
         }
         Constant.DRIVER.manage().window().maximize();
         DriverHelper.navigate(Constant.RAILWAY_HOME_URL);

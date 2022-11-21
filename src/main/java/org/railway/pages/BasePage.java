@@ -71,23 +71,18 @@ public class BasePage {
         }
     }
     public void goToLoginPage() {
-        Log4j.info("Click on Login tab");
         this.getTabLogin().click();
     }
     public void goToBookTicket() {
-        Log4j.info("Click on BookTick tab");
         this.getTabBookTicket().click();
     }
     public void goToRegisterTab() {
-        Log4j.info("Click on Register tab");
         this.getTabRegister().click();
     }
     public void goToMyTicketTab() {
-        Log4j.info("Click on My Ticket tab");
         this.getTabMyTicket().click();
     }
     public void goToChangePasswordTab() {
-        Log4j.info("Click on Change Password tab");
         this.getTabChangePassword().click();
     }
     public String getWelcomeMsg() {
