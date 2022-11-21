@@ -18,53 +18,44 @@ public class RegisterPage extends BasePage {
     private final By passWordErrorMsg = By.xpath("//li[@class='password']//label[@class='validation-error']");
     private final By pidErrorMsg = By.xpath("//li[@class='pid-number']//label[@class='validation-error']");
     private final By successRegisterMsg = By.cssSelector("#content p");
-    public WebElement getLinkLogin() {
+    private WebElement getLinkLogin() {
         return Constant.DRIVER.findElement(linkLogin);
     }
-
-    public WebElement getLinkConfirm() {
+    private WebElement getLinkConfirm() {
         return Constant.DRIVER.findElement(linkConfirm);
     }
-
-    public WebElement getTxtUserName() {
+    private WebElement getTxtUserName() {
         return Constant.DRIVER.findElement(txtUserName);
     }
-
-    public WebElement getTxtConfirmPass() {
+    private WebElement getTxtConfirmPass() {
         return Constant.DRIVER.findElement(txtConfirmPass);
     }
-
-    public WebElement getTxtPassPort() {
+    private WebElement getTxtPassPort() {
         return Constant.DRIVER.findElement(txtPassPort);
     }
-
-    public WebElement getTxtPassword() {
+    private WebElement getTxtPassword() {
         return Constant.DRIVER.findElement(txtPassword);
     }
-
-    public WebElement getBtnRegister() {
+    private WebElement getBtnRegister() {
         return Constant.DRIVER.findElement(btnRegister);
     }
-
-    public WebElement getRegisterErrorMsg() {
+    private WebElement getRegisterErrorMsg() {
         return Constant.DRIVER.findElement(registerErrorMsg);
     }
-
-    public WebElement getUserNameErrorMsg() {
+    private WebElement getUserNameErrorMsg() {
 
         return Constant.DRIVER.findElement(userNameErrorMsg);
     }
-
-    public WebElement getPassWordErrorMsg() {
+    private WebElement getPassWordErrorMsg() {
         return Constant.DRIVER.findElement(passWordErrorMsg);
     }
-
-    public WebElement getPidErrorMsg() {
+    private WebElement getPidErrorMsg() {
         return Constant.DRIVER.findElement(pidErrorMsg);
     }
-    public WebElement getSuccessRegisterMsg() {
+    private WebElement getSuccessRegisterMsg() {
         return Constant.DRIVER.findElement(successRegisterMsg);
     }
+
     public String getSuccessMsg() {
         return getSuccessRegisterMsg().getText();
     }
@@ -74,5 +65,8 @@ public class RegisterPage extends BasePage {
         getTxtConfirmPass().sendKeys(confirmPassword);
         getTxtPassPort().sendKeys(pid);
         getBtnRegister().click();
+    }
+    public String getRegisterErrorMsgText() {
+        return this.getRegisterErrorMsg().getText();
     }
 }

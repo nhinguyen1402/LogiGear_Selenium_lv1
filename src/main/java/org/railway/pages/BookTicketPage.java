@@ -12,22 +12,22 @@ public class BookTicketPage extends BasePage {
     private final By selectTicketAmount = By.xpath("//select[@name='TicketAmount']");
     private final By btnBook = By.xpath("//input[@value='Book ticket']");
 
-    public WebElement getSelectDate() {
+    private WebElement getSelectDate() {
         return Constant.DRIVER.findElement(selectDate);
     }
-    public WebElement getSelectDepartStation() {
+    private WebElement getSelectDepartStation() {
         return Constant.DRIVER.findElement(selectDepartStation);
     }
-    public WebElement getSelectArriveStation() {
+    private WebElement getSelectArriveStation() {
         return Constant.DRIVER.findElement(selectArriveStation);
     }
-    public WebElement getSelectSeatType() {
+    private WebElement getSelectSeatType() {
         return Constant.DRIVER.findElement(selectSeatType);
     }
-    public WebElement getSelectTicketAmount() {
+    private WebElement getSelectTicketAmount() {
         return Constant.DRIVER.findElement(selectTicketAmount);
     }
-    public WebElement getBtnBook() {
+    private WebElement getBtnBook() {
         return Constant.DRIVER.findElement(btnBook);
     }
     public void selectBtnBook() {

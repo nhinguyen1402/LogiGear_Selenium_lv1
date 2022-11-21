@@ -23,4 +23,8 @@ public class DataHelper {
         return faker.number().numberBetween(min, max);
     }
 
+    public static String randomValidPassWord() {
+        return faker.lorem().characters(
+                1, 32 - 9, true, true);
+    }
 }

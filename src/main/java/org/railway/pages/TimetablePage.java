@@ -12,14 +12,13 @@ public class TimetablePage extends BasePage {
     private By linkCheckPrice = By.xpath(checkPrice);
     private By linkBookTicket = By.xpath(bookTicket);
 
-    public WebElement getLinkCheckPrice(String a, String b) {
+    private WebElement getLinkCheckPrice(String a, String b) {
         checkPrice.replace("Depart Station", a);
         checkPrice.replace("Arrive Station", b);
         linkCheckPrice = By.xpath(checkPrice);
         return Constant.DRIVER.findElement(linkCheckPrice);
     }
-
-    public WebElement getLinkBookTicket(String a, String b) {
+    private WebElement getLinkBookTicket(String a, String b) {
         checkPrice.replace("Depart Station", a);
         checkPrice.replace("Arrive Station", b);
         linkBookTicket = By.xpath(bookTicket);
