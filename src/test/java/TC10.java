@@ -23,6 +23,8 @@ public class TC10 extends BaseTest{
         String password = ConfigLoader.getInstance().getPropertyByKey(PASSWORD);
         String confirmPassword = DataHelper.randomValidPassWord();
         String pid = Integer.toString(DataHelper.randomValidPid());
+
+        Log4j.info("Step: Register new account with email: " + email + ", password: " + password + ", confirm password: " + confirmPassword + ", pid: " + pid);
         registerPage.register(email, password, confirmPassword, pid);
 
         Log4j.info("Verify: User can't create account with Confirm password is not the same with Password");

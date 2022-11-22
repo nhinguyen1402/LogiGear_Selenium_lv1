@@ -20,17 +20,27 @@ public class TC09 extends BaseTest{
     public void testcase009() {
         Log4j.header("Testcase 009");
         Log4j.info("Precondition: Register new account");
+
+        Log4j.info("Step: Go to Register page");
         homePage.goToRegisterTab();
         String email = DataHelper.randomValidUsername();
         String password = ConfigLoader.getInstance().getPropertyByKey(PASSWORD);
         String pid = Integer.toString(DataHelper.randomValidPid());
+
+        Log4j.info("Step: Register new account with email: " + email + ", password: " + password + ", confirm password: " + password + ", pid: " + pid);
         registerPage.register(email, password, password, pid);
 
-        Log4j.info("Step: User Login and change Password");
+        Log4j.info("Step: Go to Login page");
         registerPage.goToLoginPage();
+
+        Log4j.info("Login with Name: " + email + " and password: "+password);
         loginPage.login(email, password);
+
+        Log4j.info("Step: Go to Change password page");
         homePage.goToChangePasswordTab();
         String newPass= DataHelper.randomValidPassWord();
+
+        Log4j.info("Step: Change password with old password: " + password + ", new password: " + newPass + " and confirm password: " + password);
         changePasswordPage.changePass(password, newPass, newPass);
 
         Log4j.info("Verify: Change Password success");

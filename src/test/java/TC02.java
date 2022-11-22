@@ -8,11 +8,12 @@ public class TC02 extends BaseTest{
     LoginPage loginPage = new LoginPage();
     @Test(priority = 1, testName = "TC_02", description = "TC02 - User can't login with blank Username textBox")
     public void TC02() {
+        String username = Constant.EMPTY_USERNAME;
         String password = Constant.PASSWORD;
         Log4j.info("Go to Login page");
         loginPage.goToLoginPage();
-        Log4j.info("Login with blank username: " + " and password: "+password);
-        loginPage.login("", password);
+        Log4j.info("Login with blank username: " + username + " and password: " + password);
+        loginPage.login(username, password);
 
         String actualMsg = loginPage.getErrorMsg();
         String expectedMsg = "There was a problem with your login and/or errors exist in your form.";

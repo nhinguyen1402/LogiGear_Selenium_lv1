@@ -41,13 +41,9 @@ public class ChangePasswordPage extends BasePage{
     }
 
     public void changePass(String currentPass, String newPass, String confirmPass) {
-        Log4j.info("Input to Current Password: text box: " + currentPass);
         getTxtCurrentPass().sendKeys(currentPass);
-        Log4j.info("Input to New Password:: text box: " + newPass);
         getTxtNewPass().sendKeys(newPass);
-        Log4j.info("Input to Confirm Password:: text box: " + confirmPass);
         getTxtConfirmPass().sendKeys(confirmPass);
-        Log4j.info("Click on Change Password Button");
         getBntChangePass().click();
     }
     public String getChangePassSuccessMsg() {

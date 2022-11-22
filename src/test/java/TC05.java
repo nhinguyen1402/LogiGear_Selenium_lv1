@@ -11,21 +11,22 @@ public class TC05 extends BaseTest {
     @Test(priority = 1, testName = "TC_005", description = "System shows message when user enters wrong password several times")
     public void testcase005() {
         String username = Constant.USERNAME;
+        String emptyPassword = Constant.EMPTY_PASSWORD;
 
         Log4j.header("Testcase 005");
         loginPage.goToLoginPage();
 
         Log4j.info("Step: Fist time login with invalid account");
-        loginPage.login(username, "");
+        loginPage.login(username, emptyPassword);
 
         Log4j.info("Step: Second time login with invalid account");
-        loginPage.login(username, "");
+        loginPage.login(username, emptyPassword);
 
         Log4j.info("Step: Third time login with invalid account");
-        loginPage.login(username, "");
+        loginPage.login(username, emptyPassword);
 
         Log4j.info("Step: Fourth time login with invalid account");
-        loginPage.login(username, "");
+        loginPage.login(username, emptyPassword);
 
         String actualMsg = loginPage.getErrorMsg();
         String expectedMsg = "There was a problem with your login and/or errors exist in your form.";
