@@ -18,6 +18,7 @@ public class MyTicketPage extends BasePage {
     }
 
     public void clickCancelButtonByTicketInfo(String departStation, String arriveStation, String departDate) {
+        scrollToElement(getCancelButtonByTicketInfo(departStation, arriveStation, departDate));
         getCancelButtonByTicketInfo(departStation, arriveStation, departDate).click();
     }
     public String getNoteText() {

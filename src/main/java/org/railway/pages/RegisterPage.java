@@ -57,11 +57,31 @@ public class RegisterPage extends BasePage {
         return getLblSuccessRegister().getText();
     }
     public void register(String email, String password, String confirmPassword, String pid) {
-        getTxtUserName().sendKeys(email);
-        getTxtPassword().sendKeys(password);
-        getTxtConfirmPass().sendKeys(confirmPassword);
-        getTxtPassPort().sendKeys(pid);
+        inputUserName(email);
+        inputPassword(password);
+        inputConfirmPassword(confirmPassword);
+        inputPID(pid);
+        clickRegisterButton();
+    }
+    public void clickRegisterButton() {
+        scrollToElement(getBtnRegister());
         getBtnRegister().click();
+    }
+    public void inputUserName(String userName) {
+        scrollToElement(getTxtUserName());
+        getTxtUserName().sendKeys(userName);
+    }
+    public void inputPassword(String password) {
+        scrollToElement(getTxtPassword());
+        getTxtPassword().sendKeys(password);
+    }
+    public void inputConfirmPassword(String confirmPassword) {
+        scrollToElement(getTxtConfirmPass());
+        getTxtConfirmPass().sendKeys(confirmPassword);
+    }
+    public void inputPID(String pid) {
+        scrollToElement(getTxtConfirmPass());
+        getTxtPassPort().sendKeys(pid);
     }
     public String getRegisterErrorMsgText() {
         return this.getLblRegisterError().getText();

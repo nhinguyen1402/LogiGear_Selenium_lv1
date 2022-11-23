@@ -40,10 +40,26 @@ public class ChangePasswordPage extends BasePage{
     }
 
     public void changePass(String currentPass, String newPass, String confirmPass) {
-        getTxtCurrentPass().sendKeys(currentPass);
-        getTxtNewPass().sendKeys(newPass);
-        getTxtConfirmPass().sendKeys(confirmPass);
+        inputCurrentPassword(currentPass);
+        inputNewPassword(newPass);
+        inputConfirmPassword(confirmPass);
+        clickChangePasswordButton();
+    }
+    public void clickChangePasswordButton() {
+        scrollToElement(getBntChangePass());
         getBntChangePass().click();
+    }
+    public void inputCurrentPassword(String currentPass) {
+        scrollToElement(getTxtCurrentPass());
+        getTxtCurrentPass().sendKeys(currentPass);
+    }
+    public void inputNewPassword(String newPass) {
+        scrollToElement(getTxtNewPass());
+        getTxtNewPass().sendKeys(newPass);
+    }
+    public void inputConfirmPassword(String confirmPassword) {
+        scrollToElement(getTxtConfirmPass());
+        getTxtConfirmPass().sendKeys(confirmPassword);
     }
     public String getChangePassSuccessMsg() {
         return this.getLblChangePass().getText();
