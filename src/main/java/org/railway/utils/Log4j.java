@@ -16,6 +16,10 @@ public class Log4j {
         logger.info(message);
     }
 
+    public static void error(String message) {
+        logger.error(message);
+    }
+
     public static void header(String str) {
         info("<--------------------" + str + "-------------------->\n");
     }

@@ -3,7 +3,6 @@ package org.railway.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.railway.utils.Constant;
-import org.railway.utils.Log4j;
 
 public class LoginPage extends BasePage {
     private final By txtUserName = By.xpath("//input[@id='username']");
@@ -11,9 +10,9 @@ public class LoginPage extends BasePage {
     private final By btnLogin = By.xpath("//input[@value='Login']");
     private final By linkRegister = By.xpath("//div[@id='content']//following::a[contains(@href,'Register')]");
     private final By linkForgotPass = By.xpath("//div[@id='content']//following::a[contains(@href,'Forgot')]");
-    private final By loginErrorMsg = By.xpath("//p[@class='message error LoginForm']");
-    private final By userNameErrorMsg = By.xpath("//li[@class='username']//label[@class='validation-error']");
-    private final By passWordErrorMsg = By.xpath("//li[@class='password']//label[@class='validation-error']");
+    private final By lblLoginError = By.xpath("//p[@class='message error LoginForm']");
+    private final By lblUserNameError = By.xpath("//li[@class='username']//label[@class='validation-error']");
+    private final By lblPassWordError = By.xpath("//li[@class='password']//label[@class='validation-error']");
 
     private WebElement getTxtUserName() {
         return Constant.DRIVER.findElement(txtUserName);
@@ -30,25 +29,35 @@ public class LoginPage extends BasePage {
     private WebElement getLinkForgotPass() {
         return Constant.DRIVER.findElement(linkForgotPass);
     }
-    private WebElement getLoginErrorMsg() { return Constant.DRIVER.findElement(loginErrorMsg); }
-    private WebElement getUserNameErrorMsg() {
-        return Constant.DRIVER.findElement(userNameErrorMsg);
+    private WebElement getLblLoginError() { return Constant.DRIVER.findElement(lblLoginError); }
+    private WebElement getLblUserNameError() {
+        return Constant.DRIVER.findElement(lblUserNameError);
     }
-    private WebElement getPassWordErrorMsg() {
-        return Constant.DRIVER.findElement(passWordErrorMsg);
+    private WebElement getLblPassWordError() {
+        return Constant.DRIVER.findElement(lblPassWordError);
     }
 
     public void login(String username, String pass) {
-        getTxtUserName().sendKeys(username);
-        getTxtPassword().sendKeys(pass);
-        getBtnLogin().click();
+        this.inputUserName(username);
+        this.inputPassword(pass);
+        clickLoginButton();
     }
-
     public String getErrorMsg() {
-        return this.getLoginErrorMsg().getText();
+        return this.getLblLoginError().getText();
     }
-
     public String getUserNameMsg() {
-        return this.getUserNameErrorMsg().getText();
+        return this.getLblUserNameError().getText();
+    }
+    public void inputUserName(String userName) {
+        scrollToElement(getTxtUserName());
+        getTxtUserName().sendKeys(userName);
+    }
+    public void inputPassword(String password) {
+        scrollToElement(getTxtPassword());
+        getTxtPassword().sendKeys(password);
+    }
+    public void clickLoginButton() {
+        scrollToElement(getBtnLogin());
+        getBtnLogin().click();
     }
 }
