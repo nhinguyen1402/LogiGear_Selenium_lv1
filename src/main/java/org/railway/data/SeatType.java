@@ -1,4 +1,4 @@
-package org.railway.stationenum;
+package org.railway.data;
 
 public enum SeatType {
     HARD_SEAT("1"),

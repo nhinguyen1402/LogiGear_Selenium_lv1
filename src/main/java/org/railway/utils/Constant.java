@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 public class Constant {
     public static WebDriver DRIVER;
+    public static final int TIMEOUT_IN_SECONDS = 10;
     public static final String RAILWAY_HOME_URL = "http://railwayb2.somee.com/Page/HomePage.cshtml";
     public static final String USERNAME = ConfigLoader.getInstance().getPropertyByKey("USERNAME");
     public static final String PASSWORD = ConfigLoader.getInstance().getPropertyByKey("PASSWORD");

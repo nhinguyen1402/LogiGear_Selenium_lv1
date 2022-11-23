@@ -20,7 +20,6 @@ public class BasePage {
     private final By tabLogout = By.xpath("//div[@id='menu']//following::span[contains(text(),'out')]");
     private final By tabLogin = By.xpath("//div[@id='menu']//following::span[contains(text(),'in')]");
     private final By lblWelcomeMsg = By.xpath("//div[@class='account']/strong");
-
     private final By lblPageTitle = By.cssSelector("#content h1");
 
     private WebElement getLblPageTitle() {
@@ -62,10 +61,10 @@ public class BasePage {
     private WebElement getLblWelcomeMsg() {
         return Constant.DRIVER.findElement(lblWelcomeMsg);
     }
-    public WebElement scrollToElement(WebElement element) {
+
+    public void scrollToElement(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) Constant.DRIVER;
         js.executeScript("arguments[0].scrollIntoView();", element);
-        return element;
     }
     public boolean isElementPresented(WebElement element) {
         try {
@@ -80,7 +79,9 @@ public class BasePage {
     public void goToBookTicket() {
         this.getTabBookTicket().click();
     }
-    public void goToRegisterTab() { this.getTabRegister().click(); }
+    public void goToRegisterTab() {
+        this.getTabRegister().click();
+    }
     public void goToMyTicketTab() {
         this.getTabMyTicket().click();
     }
@@ -99,7 +100,6 @@ public class BasePage {
     public String getPageTitleText() {
         return this.getLblPageTitle().getText();
     }
-
     public Boolean isLoginTabDisplayed() {
         return isElementPresented(getTabLogin());
     }

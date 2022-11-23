@@ -1,13 +1,11 @@
 import org.railway.helper.DataHelper;
 import org.railway.pages.*;
-import org.railway.stationenum.Station;
+import org.railway.data.Station;
 import org.railway.utils.Constant;
 import org.railway.utils.Log4j;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
-import java.sql.Time;
 
 public class TC15 extends BaseTest {
     HomePage homePage= new HomePage();
@@ -41,7 +39,7 @@ public class TC15 extends BaseTest {
         homePage.goToTimeTableTab();
 
         String departFromValue = Station.HUE.getValue();
-        String arriveAtValue = Station.SAIGON.getValue();
+        String arriveAtValue = Station.SAI_GON.getValue();
         Log4j.info("Step: Click Book Ticket link of the route from Huế to Sài Gòn");
         timeTablePage.clickLinkBookTicket(departFromValue, arriveAtValue);
 

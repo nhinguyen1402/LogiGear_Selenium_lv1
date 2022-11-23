@@ -49,10 +49,15 @@ public class LoginPage extends BasePage {
         return this.getLblUserNameError().getText();
     }
     public void inputUserName(String userName) {
-        scrollToElement(getTxtUserName()).sendKeys(userName);
+        scrollToElement(getTxtUserName());
+        getTxtUserName().sendKeys(userName);
     }
     public void inputPassword(String password) {
-        scrollToElement(getTxtPassword()).sendKeys(password);
+        scrollToElement(getTxtPassword());
+        getTxtPassword().sendKeys(password);
     }
-    public void clickLoginButton() { this.scrollToElement(getBtnLogin()).click(); }
+    public void clickLoginButton() {
+        scrollToElement(getBtnLogin());
+        getBtnLogin().click();
+    }
 }

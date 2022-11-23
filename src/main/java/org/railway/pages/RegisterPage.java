@@ -17,6 +17,7 @@ public class RegisterPage extends BasePage {
     private final By lblPassWordError = By.xpath("//li[@class='password']//label[@class='validation-error']");
     private final By lblPidError = By.xpath("//li[@class='pid-number']//label[@class='validation-error']");
     private final By lblSuccessRegister = By.cssSelector("#content p");
+
     private WebElement getLinkLogin() {
         return Constant.DRIVER.findElement(linkLogin);
     }
