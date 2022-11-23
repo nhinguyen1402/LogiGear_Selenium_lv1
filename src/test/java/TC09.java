@@ -3,12 +3,10 @@ import org.railway.pages.ChangePasswordPage;
 import org.railway.pages.HomePage;
 import org.railway.pages.LoginPage;
 import org.railway.pages.RegisterPage;
-import org.railway.utils.ConfigLoader;
+import org.railway.utils.Constant;
 import org.railway.utils.Log4j;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import static org.railway.utils.Constant.PASSWORD;
 
 public class TC09 extends BaseTest{
     HomePage homePage= new HomePage();
@@ -24,7 +22,7 @@ public class TC09 extends BaseTest{
         Log4j.info("Step: Go to Register page");
         homePage.goToRegisterTab();
         String email = DataHelper.randomValidUsername();
-        String password = ConfigLoader.getInstance().getPropertyByKey(PASSWORD);
+        String password = Constant.PASSWORD;
         String pid = Integer.toString(DataHelper.randomValidPid());
 
         Log4j.info("Step: Register new account with email: " + email + ", password: " + password + ", confirm password: " + password + ", pid: " + pid);

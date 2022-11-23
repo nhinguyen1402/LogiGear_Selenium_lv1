@@ -1,10 +1,10 @@
 package org.railway.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.railway.utils.Constant;
-import org.railway.utils.Log4j;
 
 
 public class BasePage {
@@ -21,10 +21,10 @@ public class BasePage {
     private final By tabLogin = By.xpath("//div[@id='menu']//following::span[contains(text(),'in')]");
     private final By lblWelcomeMsg = By.xpath("//div[@class='account']/strong");
 
-    private final By pageTitle = By.cssSelector("#content h1");
+    private final By lblPageTitle = By.cssSelector("#content h1");
 
-    private WebElement getPageTitle() {
-        return Constant.DRIVER.findElement(pageTitle);
+    private WebElement getLblPageTitle() {
+        return Constant.DRIVER.findElement(lblPageTitle);
     }
     private WebElement getTabHome() {
         return Constant.DRIVER.findElement(tabHome);
@@ -62,7 +62,11 @@ public class BasePage {
     private WebElement getLblWelcomeMsg() {
         return Constant.DRIVER.findElement(lblWelcomeMsg);
     }
-
+    public WebElement scrollToElement(WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) Constant.DRIVER;
+        js.executeScript("arguments[0].scrollIntoView();", element);
+        return element;
+    }
     public boolean isElementPresented(WebElement element) {
         try {
             return element.isDisplayed();
@@ -76,20 +80,24 @@ public class BasePage {
     public void goToBookTicket() {
         this.getTabBookTicket().click();
     }
-    public void goToRegisterTab() {
-        this.getTabRegister().click();
-    }
+    public void goToRegisterTab() { this.getTabRegister().click(); }
     public void goToMyTicketTab() {
         this.getTabMyTicket().click();
     }
     public void goToChangePasswordTab() {
         this.getTabChangePassword().click();
     }
+    public void goToBookTicketTab() {
+        this.getTabBookTicket().click();
+    }
+    public void goToTimeTableTab() {
+        this.getTabTimetable().click();
+    }
     public String getWelcomeMsg() {
         return this.getLblWelcomeMsg().getText();
     }
     public String getPageTitleText() {
-        return this.getPageTitle().getText();
+        return this.getLblPageTitle().getText();
     }
 
     public Boolean isLoginTabDisplayed() {

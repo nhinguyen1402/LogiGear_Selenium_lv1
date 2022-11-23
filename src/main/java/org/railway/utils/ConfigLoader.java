@@ -22,7 +22,7 @@ public class ConfigLoader {
         if (prop != null) {
             return prop;
         } else {
-            throw new RuntimeException("Property " + keyword + "is not specified in the properties.properties file");
+            throw new RuntimeException("Property " + keyword + " is not specified in the properties.properties file");
         }
     }
 }

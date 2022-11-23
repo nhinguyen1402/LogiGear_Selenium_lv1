@@ -4,6 +4,7 @@ import org.railway.pages.HomePage;
 import org.railway.pages.LoginPage;
 import org.railway.pages.RegisterPage;
 import org.railway.utils.ConfigLoader;
+import org.railway.utils.Constant;
 import org.railway.utils.Log4j;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -20,7 +21,7 @@ public class TC10 extends BaseTest{
         Log4j.info("Step: Register new account with Confirm password is not the same with Password");
         homePage.goToRegisterTab();
         String email = DataHelper.randomValidUsername();
-        String password = ConfigLoader.getInstance().getPropertyByKey(PASSWORD);
+        String password = Constant.PASSWORD;
         String confirmPassword = DataHelper.randomValidPassWord();
         String pid = Integer.toString(DataHelper.randomValidPid());
 
