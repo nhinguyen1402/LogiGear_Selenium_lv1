@@ -10,6 +10,8 @@ public class TC02 extends BaseTest{
     public void TC02() {
         String username = Constant.EMPTY_USERNAME;
         String password = Constant.PASSWORD;
+
+        Log4j.header("Testcase 002");
         Log4j.info("Go to Login page");
         loginPage.goToLoginPage();
         Log4j.info("Login with blank username: " + username + " and password: " + password);

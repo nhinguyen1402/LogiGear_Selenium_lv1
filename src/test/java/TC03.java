@@ -11,6 +11,8 @@ public class TC03 extends BaseTest{
     public void TC03() {
         String username = Constant.USERNAME;
         String password = Constant.INVALID_PASSWORD;
+
+        Log4j.header("Testcase 003");
         Log4j.info("Go to Login page");
         loginPage.goToLoginPage();
         Log4j.info("Login with valid Name: " + username + " and invalid password: "+password);
