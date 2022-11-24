@@ -1,4 +1,3 @@
-import org.railway.utils.ConfigLoader;
 import org.railway.pages.LoginPage;
 import org.railway.utils.Constant;
 import org.railway.utils.Log4j;
@@ -17,7 +16,7 @@ public class TC03 extends BaseTest{
         Log4j.info("Login with valid Name: " + username + " and invalid password: "+password);
         loginPage.login(username, password);
 
-        String actualMsg = loginPage.getErrorMsg();
+        String actualMsg = loginPage.getErrorMsgText();
         String expectedMsg = "Invalid username or password. Please try again.";
         Log4j.info("Verify that Error message is displayed.");
         Assert.assertEquals(actualMsg, expectedMsg, "There was a problem with your login and/or errors exist in your form.");

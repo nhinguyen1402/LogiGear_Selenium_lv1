@@ -5,13 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.railway.utils.Constant;
 
 public class ChangePasswordPage extends BasePage{
-    private final By txtCurrentPass = By.xpath("//input[@id='currentPassword']");
-    private final By txtNewPass = By.xpath("//input[@id='newPassword']");
-    private final By txtConfirmPass = By.xpath("//input[@id='confirmPassword']");
-    private final By bntChangePass = By.xpath("//input[contains(@title,'Change')]");
-    private final By lblRegisterError = By.xpath("//p[@class='message error']");
-    private final By lblCurrentPassError = By.xpath("//li[@class='current-password']//label[@class='validation-error']");
-    private final By lblNewPassError = By.xpath("//li[@class='new-password']//label[@class='validation-error']");
+    private final By txtCurrentPass = By.cssSelector("input#currentPassword");
+    private final By txtNewPass = By.cssSelector("input#newPassword");
+    private final By txtConfirmPass = By.cssSelector("input#confirmPassword");
+    private final By bntChangePass = By.cssSelector("p.form-actions input");
     private final By lblChangePass = By.cssSelector("p.message.success");
 
     private WebElement getTxtCurrentPass() {
@@ -25,15 +22,6 @@ public class ChangePasswordPage extends BasePage{
     }
     private WebElement getBntChangePass() {
         return Constant.DRIVER.findElement(bntChangePass);
-    }
-    private WebElement getLblRegisterError() {
-        return Constant.DRIVER.findElement(lblRegisterError);
-    }
-    private WebElement getLblCurrentPassError() {
-        return Constant.DRIVER.findElement(lblCurrentPassError);
-    }
-    private WebElement getLblNewPassError() {
-        return Constant.DRIVER.findElement(lblNewPassError);
     }
     private WebElement getLblChangePass() {
         return Constant.DRIVER.findElement(lblChangePass);
@@ -62,6 +50,7 @@ public class ChangePasswordPage extends BasePage{
         getTxtConfirmPass().sendKeys(confirmPassword);
     }
     public String getChangePassSuccessMsg() {
+        scrollToElement(getLblChangePass());
         return this.getLblChangePass().getText();
     }
 }

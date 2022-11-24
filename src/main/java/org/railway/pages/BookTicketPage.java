@@ -6,22 +6,22 @@ import org.openqa.selenium.support.ui.Select;
 import org.railway.utils.Constant;
 
 public class BookTicketPage extends BasePage {
-    private final By ccbDepartDate = By.xpath("//select[@name='Date']");
-    private final By ccbDepartStation = By.xpath("//select[@name='DepartStation']");
-    private final By ccbArriveStation = By.xpath("//select[@name='ArriveStation']");
-    private final By ccbSeatType = By.xpath("//select[@name='SeatType']");
-    private final By ccbTicketAmount = By.xpath("//select[@name='TicketAmount']");
+    private final By ccbDepartDate = By.cssSelector("[name=Date]");
+    private final By ccbDepartStation = By.cssSelector("[name=DepartStation]");
+    private final By ccbArriveStation = By.cssSelector("[name=ArriveStation]");
+    private final By ccbSeatType = By.cssSelector("[name=SeatType]");
+    private final By ccbTicketAmount = By.cssSelector("[name=TicketAmount]");
     private final By btnBookTicket = By.xpath("//input[@value='Book ticket']");
     private final By lblBookTicketSuccess = By.cssSelector("div#content h1");
     private final String lblDepartDate = "//select[@name='Date']/option[@value='%s']";
     private final String lblSeatType = "//select[@name='SeatType']/option[@value='%s']";
     private final By lblSelectedDepartFrom = By.xpath("//select[@name='DepartStation']/option[@selected='selected']");
     private final By lblSelectedArriveAt = By.xpath("//select[@name='ArriveStation']/option[@selected='selected']");
-    private final By clmDepartStation = By.xpath("//tbody//following::td[1]");
-    private final By clmArriveStation = By.xpath("//tbody//following::td[2]");
-    private final By clmSeatType = By.xpath("//tbody//following::td[3]");
-    private final By clmDepartDate = By.xpath("//tbody//following::td[4]");
-    private final By clmAmount = By.xpath("//tbody//following::td[7]");
+    private final By dblDepartStation = By.xpath("//tbody//following::td[1]");
+    private final By dblArriveStation = By.xpath("//tbody//following::td[2]");
+    private final By dblSeatType = By.xpath("//tbody//following::td[3]");
+    private final By dblDepartDate = By.xpath("//tbody//following::td[4]");
+    private final By dblAmount = By.xpath("//tbody//following::td[7]");
 
     private WebElement getCcbDepartDate() {
         return Constant.DRIVER.findElement(ccbDepartDate);
@@ -57,19 +57,19 @@ public class BookTicketPage extends BasePage {
         return Constant.DRIVER.findElement(lblSelectedArriveAt);
     }
     private WebElement getDepartStation() {
-        return Constant.DRIVER.findElement(clmDepartStation);
+        return Constant.DRIVER.findElement(dblDepartStation);
     }
     private WebElement getArriveStation() {
-        return Constant.DRIVER.findElement(clmArriveStation);
+        return Constant.DRIVER.findElement(dblArriveStation);
     }
     private WebElement getSeatType() {
-        return Constant.DRIVER.findElement(clmSeatType);
+        return Constant.DRIVER.findElement(dblSeatType);
     }
     private WebElement getAmount() {
-        return Constant.DRIVER.findElement(clmAmount);
+        return Constant.DRIVER.findElement(dblAmount);
     }
     private WebElement getDepartDate() {
-        return Constant.DRIVER.findElement(clmDepartDate);
+        return Constant.DRIVER.findElement(dblDepartDate);
     }
     public String getBookTicketSuccessMsg() {
         return getLblBookTicketSuccess().getText();
@@ -111,38 +111,47 @@ public class BookTicketPage extends BasePage {
     }
 
     public String getDepartStationText() {
-        return this.getDepartStation().getText();
+        scrollToElement(getDepartStation());
+        return getDepartStation().getText();
     }
 
     public String getArriveStationText() {
-        return this.getArriveStation().getText();
+        scrollToElement(getArriveStation());
+        return getArriveStation().getText();
     }
 
     public String getSeatTypeText() {
-        return this.getSeatType().getText();
+        scrollToElement(getSeatType());
+        return getSeatType().getText();
     }
 
     public String getAmountText() {
-        return this.getAmount().getText();
+        scrollToElement(getAmount());
+        return getAmount().getText();
     }
 
     public String getDepartDateText() {
-        return this.getDepartDate().getText();
+        scrollToElement(getDepartDate());
+        return getDepartDate().getText();
     }
 
     public String getLblDepartDateText(String a) {
+        scrollToElement(getLblDepartDate(a));
         return getLblDepartDate(a).getText();
     }
 
     public String getLblSeatTypeText(String text) {
+        scrollToElement(getLblSeatType(text));
         return getLblSeatType(text).getText();
     }
 
     public String getLblSelectedDepartFromText() {
+        scrollToElement(getLblSelectedDepartFrom());
         return getLblSelectedDepartFrom().getText();
     }
 
     public String getLblSelectedArriveAtText() {
+        scrollToElement(getLblSelectedArriveAt());
         return getLblSelectedArriveAt().getText();
     }
 }
