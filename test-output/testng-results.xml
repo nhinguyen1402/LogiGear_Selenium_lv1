@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="28" passed="28" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-24T14:42:16 ICT" name="Automation Selenium" finished-at="2022-11-24T14:47:15 ICT" duration-ms="299069">
+    <groups>
+    </groups>
+    <test started-at="2022-11-24T14:42:16 ICT" name="Test-Chrome" finished-at="2022-11-24T14:44:22 ICT" duration-ms="126000">
+      <class name="TC11">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC11@1b1473ab]" started-at="2022-11-24T14:43:39 ICT" name="beforeMethod" finished-at="2022-11-24T14:43:43 ICT" duration-ms="4265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testcase011()[pri:1, instance:TC11@1b1473ab]" started-at="2022-11-24T14:43:43 ICT" name="testcase011" description="User can&#039;t create account while password and PID fields are empty" finished-at="2022-11-24T14:43:45 ICT" duration-ms="1761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase011 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC11@1b1473ab]" started-at="2022-11-24T14:43:45 ICT" name="afterMethod" finished-at="2022-11-24T14:43:45 ICT" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC11 -->
+      <class name="TC10">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC10@4386f16]" started-at="2022-11-24T14:43:33 ICT" name="beforeMethod" finished-at="2022-11-24T14:43:37 ICT" duration-ms="4677" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testcase010()[pri:1, instance:TC10@4386f16]" started-at="2022-11-24T14:43:37 ICT" name="testcase010" description="User can&#039;t create account with Confirm password is not the same with Password" finished-at="2022-11-24T14:43:39 ICT" duration-ms="1605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase010 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC10@4386f16]" started-at="2022-11-24T14:43:39 ICT" name="afterMethod" finished-at="2022-11-24T14:43:39 ICT" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC10 -->
+      <class name="TC08">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC08@1534f01b]" started-at="2022-11-24T14:43:16 ICT" name="beforeMethod" finished-at="2022-11-24T14:43:20 ICT" duration-ms="4679" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testcase008()[pri:1, instance:TC08@1534f01b]" started-at="2022-11-24T14:43:20 ICT" name="testcase008" description="User can&#039;t login with an account hasn&#039;t been registered" finished-at="2022-11-24T14:43:22 ICT" duration-ms="1509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase008 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC08@1534f01b]" started-at="2022-11-24T14:43:22 ICT" name="afterMethod" finished-at="2022-11-24T14:43:22 ICT" duration-ms="319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC08 -->
+      <class name="TC07">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC07@4ddced80]" started-at="2022-11-24T14:43:09 ICT" name="beforeMethod" finished-at="2022-11-24T14:43:13 ICT" duration-ms="4252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testcase007()[pri:1, instance:TC07@4ddced80]" started-at="2022-11-24T14:43:13 ICT" name="testcase007" description="User can create new account" finished-at="2022-11-24T14:43:15 ICT" duration-ms="2018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase007 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC07@4ddced80]" started-at="2022-11-24T14:43:15 ICT" name="afterMethod" finished-at="2022-11-24T14:43:16 ICT" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC07 -->
+      <class name="TC06">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC06@4b14c583]" started-at="2022-11-24T14:43:01 ICT" name="beforeMethod" finished-at="2022-11-24T14:43:06 ICT" duration-ms="4867" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testcase006()[pri:1, instance:TC06@4b14c583]" started-at="2022-11-24T14:43:06 ICT" name="testcase006" description="Additional pages display once user logged in" finished-at="2022-11-24T14:43:09 ICT" duration-ms="3151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase006 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC06@4b14c583]" started-at="2022-11-24T14:43:09 ICT" name="afterMethod" finished-at="2022-11-24T14:43:09 ICT" duration-ms="239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC06 -->
+      <class name="TC16">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC16@5be6e01c]" started-at="2022-11-24T14:44:10 ICT" name="beforeMethod" finished-at="2022-11-24T14:44:14 ICT" duration-ms="4346" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testcase016()[pri:1, instance:TC16@5be6e01c]" started-at="2022-11-24T14:44:14 ICT" name="testcase016" description="User can cancel a ticket" finished-at="2022-11-24T14:44:22 ICT" duration-ms="7633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase016 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC16@5be6e01c]" started-at="2022-11-24T14:44:22 ICT" name="afterMethod" finished-at="2022-11-24T14:44:22 ICT" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC16 -->
+      <class name="TC05">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC05@5c909414]" started-at="2022-11-24T14:42:52 ICT" name="beforeMethod" finished-at="2022-11-24T14:42:56 ICT" duration-ms="4016" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testcase005()[pri:1, instance:TC05@5c909414]" started-at="2022-11-24T14:42:56 ICT" name="testcase005" description="System shows message when user enters wrong password several times" finished-at="2022-11-24T14:43:01 ICT" duration-ms="4463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase005 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC05@5c909414]" started-at="2022-11-24T14:43:01 ICT" name="afterMethod" finished-at="2022-11-24T14:43:01 ICT" duration-ms="304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC05 -->
+      <class name="TC15">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC15@36c88a32]" started-at="2022-11-24T14:43:58 ICT" name="beforeMethod" finished-at="2022-11-24T14:44:03 ICT" duration-ms="4940" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testcase015()[pri:1, instance:TC15@36c88a32]" started-at="2022-11-24T14:44:03 ICT" name="testcase015" description="User can open Book ticket page by clicking on Book ticket link in Train timetable page" finished-at="2022-11-24T14:44:10 ICT" duration-ms="7071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase015 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC15@36c88a32]" started-at="2022-11-24T14:44:10 ICT" name="afterMethod" finished-at="2022-11-24T14:44:10 ICT" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC15 -->
+      <class name="TC04">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC04@433d61fb]" started-at="2022-11-24T14:42:46 ICT" name="beforeMethod" finished-at="2022-11-24T14:42:51 ICT" duration-ms="4866" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC04()[pri:1, instance:TC04@433d61fb]" started-at="2022-11-24T14:42:51 ICT" name="TC04" description="TC04 - Login page displays when un-logged User clicks on Book ticket tab" finished-at="2022-11-24T14:42:52 ICT" duration-ms="868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC04 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC04@433d61fb]" started-at="2022-11-24T14:42:52 ICT" name="afterMethod" finished-at="2022-11-24T14:42:52 ICT" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC04 -->
+      <class name="TC14">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC14@6af93788]" started-at="2022-11-24T14:43:45 ICT" name="beforeMethod" finished-at="2022-11-24T14:43:51 ICT" duration-ms="6013" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testcase014()[pri:1, instance:TC14@6af93788]" started-at="2022-11-24T14:43:51 ICT" name="testcase014" description="User can book 1 ticket at a time" finished-at="2022-11-24T14:43:58 ICT" duration-ms="6181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase014 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC14@6af93788]" started-at="2022-11-24T14:43:58 ICT" name="afterMethod" finished-at="2022-11-24T14:43:58 ICT" duration-ms="234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC14 -->
+      <class name="TC03">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC03@7adda9cc]" started-at="2022-11-24T14:42:40 ICT" name="beforeMethod" finished-at="2022-11-24T14:42:44 ICT" duration-ms="4305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC03()[pri:1, instance:TC03@7adda9cc]" started-at="2022-11-24T14:42:44 ICT" name="TC03" description="TC03 - User cannot log into Railway with invalid password " finished-at="2022-11-24T14:42:46 ICT" duration-ms="1610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC03@7adda9cc]" started-at="2022-11-24T14:42:46 ICT" name="afterMethod" finished-at="2022-11-24T14:42:46 ICT" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC03 -->
+      <class name="TC02">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC02@7c0c77c7]" started-at="2022-11-24T14:42:33 ICT" name="beforeMethod" finished-at="2022-11-24T14:42:38 ICT" duration-ms="4776" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC02()[pri:1, instance:TC02@7c0c77c7]" started-at="2022-11-24T14:42:38 ICT" name="TC02" description="TC02 - User can&#039;t login with blank Username textBox" finished-at="2022-11-24T14:42:40 ICT" duration-ms="2071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC02@7c0c77c7]" started-at="2022-11-24T14:42:40 ICT" name="afterMethod" finished-at="2022-11-24T14:42:40 ICT" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC02 -->
+      <class name="TC01">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC01@54c562f7]" started-at="2022-11-24T14:42:16 ICT" name="beforeMethod" finished-at="2022-11-24T14:42:29 ICT" duration-ms="12359" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC01()[pri:1, instance:TC01@54c562f7]" started-at="2022-11-24T14:42:29 ICT" name="TC01" description="User can log into Railway with valid username and password" finished-at="2022-11-24T14:42:32 ICT" duration-ms="3566" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC01@54c562f7]" started-at="2022-11-24T14:42:32 ICT" name="afterMethod" finished-at="2022-11-24T14:42:33 ICT" duration-ms="596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC01 -->
+      <class name="TC09">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC09@2ea227af]" started-at="2022-11-24T14:43:22 ICT" name="beforeMethod" finished-at="2022-11-24T14:43:27 ICT" duration-ms="4894" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testcase009()[pri:1, instance:TC09@2ea227af]" started-at="2022-11-24T14:43:27 ICT" name="testcase009" description="User can change password" finished-at="2022-11-24T14:43:32 ICT" duration-ms="5202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase009 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC09@2ea227af]" started-at="2022-11-24T14:43:32 ICT" name="afterMethod" finished-at="2022-11-24T14:43:33 ICT" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC09 -->
+    </test> <!-- Test-Chrome -->
+    <test started-at="2022-11-24T14:44:22 ICT" name="Test-Edge" finished-at="2022-11-24T14:47:15 ICT" duration-ms="172973">
+      <class name="TC11">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC11@21de60b4]" started-at="2022-11-24T14:46:20 ICT" name="beforeMethod" finished-at="2022-11-24T14:46:28 ICT" duration-ms="8125" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testcase011()[pri:1, instance:TC11@21de60b4]" started-at="2022-11-24T14:46:28 ICT" name="testcase011" description="User can&#039;t create account while password and PID fields are empty" finished-at="2022-11-24T14:46:29 ICT" duration-ms="1679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase011 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC11@21de60b4]" started-at="2022-11-24T14:46:29 ICT" name="afterMethod" finished-at="2022-11-24T14:46:30 ICT" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC11 -->
+      <class name="TC10">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC10@1700915]" started-at="2022-11-24T14:46:09 ICT" name="beforeMethod" finished-at="2022-11-24T14:46:18 ICT" duration-ms="8541" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testcase010()[pri:1, instance:TC10@1700915]" started-at="2022-11-24T14:46:18 ICT" name="testcase010" description="User can&#039;t create account with Confirm password is not the same with Password" finished-at="2022-11-24T14:46:19 ICT" duration-ms="1585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase010 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC10@1700915]" started-at="2022-11-24T14:46:19 ICT" name="afterMethod" finished-at="2022-11-24T14:46:20 ICT" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC10 -->
+      <class name="TC08">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC08@6a28ffa4]" started-at="2022-11-24T14:45:44 ICT" name="beforeMethod" finished-at="2022-11-24T14:45:52 ICT" duration-ms="7470" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testcase008()[pri:1, instance:TC08@6a28ffa4]" started-at="2022-11-24T14:45:52 ICT" name="testcase008" description="User can&#039;t login with an account hasn&#039;t been registered" finished-at="2022-11-24T14:45:53 ICT" duration-ms="1470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase008 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC08@6a28ffa4]" started-at="2022-11-24T14:45:53 ICT" name="afterMethod" finished-at="2022-11-24T14:45:53 ICT" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC08 -->
+      <class name="TC07">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC07@9353778]" started-at="2022-11-24T14:45:32 ICT" name="beforeMethod" finished-at="2022-11-24T14:45:42 ICT" duration-ms="10432" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testcase007()[pri:1, instance:TC07@9353778]" started-at="2022-11-24T14:45:42 ICT" name="testcase007" description="User can create new account" finished-at="2022-11-24T14:45:44 ICT" duration-ms="1908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase007 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC07@9353778]" started-at="2022-11-24T14:45:44 ICT" name="afterMethod" finished-at="2022-11-24T14:45:44 ICT" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC07 -->
+      <class name="TC06">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC06@63355449]" started-at="2022-11-24T14:45:18 ICT" name="beforeMethod" finished-at="2022-11-24T14:45:26 ICT" duration-ms="8054" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testcase006()[pri:1, instance:TC06@63355449]" started-at="2022-11-24T14:45:26 ICT" name="testcase006" description="Additional pages display once user logged in" finished-at="2022-11-24T14:45:31 ICT" duration-ms="5077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase006 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC06@63355449]" started-at="2022-11-24T14:45:31 ICT" name="afterMethod" finished-at="2022-11-24T14:45:32 ICT" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC06 -->
+      <class name="TC16">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC16@31d7b7bf]" started-at="2022-11-24T14:47:00 ICT" name="beforeMethod" finished-at="2022-11-24T14:47:08 ICT" duration-ms="7961" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testcase016()[pri:1, instance:TC16@31d7b7bf]" started-at="2022-11-24T14:47:08 ICT" name="testcase016" description="User can cancel a ticket" finished-at="2022-11-24T14:47:15 ICT" duration-ms="7150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase016 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC16@31d7b7bf]" started-at="2022-11-24T14:47:15 ICT" name="afterMethod" finished-at="2022-11-24T14:47:15 ICT" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC16 -->
+      <class name="TC05">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC05@7e0b85f9]" started-at="2022-11-24T14:45:06 ICT" name="beforeMethod" finished-at="2022-11-24T14:45:14 ICT" duration-ms="7381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testcase005()[pri:1, instance:TC05@7e0b85f9]" started-at="2022-11-24T14:45:14 ICT" name="testcase005" description="System shows message when user enters wrong password several times" finished-at="2022-11-24T14:45:18 ICT" duration-ms="4400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase005 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC05@7e0b85f9]" started-at="2022-11-24T14:45:18 ICT" name="afterMethod" finished-at="2022-11-24T14:45:18 ICT" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC05 -->
+      <class name="TC15">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC15@30ee2816]" started-at="2022-11-24T14:46:46 ICT" name="beforeMethod" finished-at="2022-11-24T14:46:55 ICT" duration-ms="8855" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testcase015()[pri:1, instance:TC15@30ee2816]" started-at="2022-11-24T14:46:55 ICT" name="testcase015" description="User can open Book ticket page by clicking on Book ticket link in Train timetable page" finished-at="2022-11-24T14:47:00 ICT" duration-ms="4897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase015 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC15@30ee2816]" started-at="2022-11-24T14:47:00 ICT" name="afterMethod" finished-at="2022-11-24T14:47:00 ICT" duration-ms="234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC15 -->
+      <class name="TC04">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC04@6580cfdd]" started-at="2022-11-24T14:44:58 ICT" name="beforeMethod" finished-at="2022-11-24T14:45:05 ICT" duration-ms="7383" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC04()[pri:1, instance:TC04@6580cfdd]" started-at="2022-11-24T14:45:05 ICT" name="TC04" description="TC04 - Login page displays when un-logged User clicks on Book ticket tab" finished-at="2022-11-24T14:45:06 ICT" duration-ms="859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC04 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC04@6580cfdd]" started-at="2022-11-24T14:45:06 ICT" name="afterMethod" finished-at="2022-11-24T14:45:06 ICT" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC04 -->
+      <class name="TC14">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC14@c267ef4]" started-at="2022-11-24T14:46:30 ICT" name="beforeMethod" finished-at="2022-11-24T14:46:39 ICT" duration-ms="9130" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testcase014()[pri:1, instance:TC14@c267ef4]" started-at="2022-11-24T14:46:39 ICT" name="testcase014" description="User can book 1 ticket at a time" finished-at="2022-11-24T14:46:46 ICT" duration-ms="7017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase014 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC14@c267ef4]" started-at="2022-11-24T14:46:46 ICT" name="afterMethod" finished-at="2022-11-24T14:46:46 ICT" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC14 -->
+      <class name="TC03">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC03@6a400542]" started-at="2022-11-24T14:44:49 ICT" name="beforeMethod" finished-at="2022-11-24T14:44:56 ICT" duration-ms="7394" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC03()[pri:1, instance:TC03@6a400542]" started-at="2022-11-24T14:44:56 ICT" name="TC03" description="TC03 - User cannot log into Railway with invalid password " finished-at="2022-11-24T14:44:58 ICT" duration-ms="1385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC03@6a400542]" started-at="2022-11-24T14:44:58 ICT" name="afterMethod" finished-at="2022-11-24T14:44:58 ICT" duration-ms="234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC03 -->
+      <class name="TC02">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC02@654f0d9c]" started-at="2022-11-24T14:44:39 ICT" name="beforeMethod" finished-at="2022-11-24T14:44:47 ICT" duration-ms="8121" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC02()[pri:1, instance:TC02@654f0d9c]" started-at="2022-11-24T14:44:47 ICT" name="TC02" description="TC02 - User can&#039;t login with blank Username textBox" finished-at="2022-11-24T14:44:48 ICT" duration-ms="1386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC02@654f0d9c]" started-at="2022-11-24T14:44:48 ICT" name="afterMethod" finished-at="2022-11-24T14:44:49 ICT" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC02 -->
+      <class name="TC01">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC01@9225652]" started-at="2022-11-24T14:44:22 ICT" name="beforeMethod" finished-at="2022-11-24T14:44:36 ICT" duration-ms="13853" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC01()[pri:1, instance:TC01@9225652]" started-at="2022-11-24T14:44:36 ICT" name="TC01" description="User can log into Railway with valid username and password" finished-at="2022-11-24T14:44:39 ICT" duration-ms="2493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC01@9225652]" started-at="2022-11-24T14:44:39 ICT" name="afterMethod" finished-at="2022-11-24T14:44:39 ICT" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC01 -->
+      <class name="TC09">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:TC09@48ae9b55]" started-at="2022-11-24T14:45:53 ICT" name="beforeMethod" finished-at="2022-11-24T14:46:02 ICT" duration-ms="8915" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testcase009()[pri:1, instance:TC09@48ae9b55]" started-at="2022-11-24T14:46:02 ICT" name="testcase009" description="User can change password" finished-at="2022-11-24T14:46:09 ICT" duration-ms="6521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase009 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TC09@48ae9b55]" started-at="2022-11-24T14:46:09 ICT" name="afterMethod" finished-at="2022-11-24T14:46:09 ICT" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TC09 -->
+    </test> <!-- Test-Edge -->
+  </suite> <!-- Automation Selenium -->
+</testng-results>

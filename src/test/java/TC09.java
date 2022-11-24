@@ -38,7 +38,7 @@ public class TC09 extends BaseTest{
         homePage.goToChangePasswordTab();
         String newPass= DataHelper.randomValidPassWord();
 
-        Log4j.info("Step: Change password with old password: " + password + ", new password: " + newPass + " and confirm password: " + password);
+        Log4j.info("Step: Change password with old password: " + password + ", new password: " + newPass + " and confirm password: " + newPass);
         changePasswordPage.changePass(password, newPass, newPass);
 
         Log4j.info("Verify: Change Password success");
