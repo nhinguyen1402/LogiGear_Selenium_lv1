@@ -10,12 +10,14 @@ public class TC02 extends BaseTest{
     public void TC02() {
         String username = Constant.EMPTY_USERNAME;
         String password = Constant.PASSWORD;
+
+        Log4j.header("Testcase 002");
         Log4j.info("Go to Login page");
         loginPage.goToLoginPage();
         Log4j.info("Login with blank username: " + username + " and password: " + password);
         loginPage.login(username, password);
 
-        String actualMsg = loginPage.getErrorMsg();
+        String actualMsg = loginPage.getErrorMsgText();
         String expectedMsg = "There was a problem with your login and/or errors exist in your form.";
         Log4j.info("Verify that Error message is displayed.");
         Assert.assertEquals(actualMsg, expectedMsg, "Login Error message is not displayed as expected");

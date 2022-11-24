@@ -13,6 +13,8 @@ public class TC01 extends BaseTest {
     public void TC01() {
         String username = Constant.USERNAME;
         String password = Constant.PASSWORD;
+
+        Log4j.header("Testcase 001");
         Log4j.info("Go to Login page");
         loginPage.goToLoginPage();
         Log4j.info("Login with Name: " + username + " and password: "+password);

@@ -28,7 +28,7 @@ public class TC05 extends BaseTest {
         Log4j.info("Step: Fourth time login with invalid account");
         loginPage.login(username, emptyPassword);
 
-        String actualMsg = loginPage.getErrorMsg();
+        String actualMsg = loginPage.getErrorMsgText();
         String expectedMsg = "There was a problem with your login and/or errors exist in your form.";
         Log4j.info("Verify that Error message is displayed.");
         Assert.assertEquals(actualMsg, expectedMsg, "Login Error message is not displayed as expected");

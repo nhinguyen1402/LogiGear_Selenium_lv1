@@ -7,6 +7,7 @@ public class TC04 extends BaseTest{
     HomePage homePage= new HomePage();
     @Test(priority = 1, testName = "TC_04", description = "TC04 - Login page displays when un-logged User clicks on Book ticket tab")
     public void TC04() {
+        Log4j.header("Testcase 004");
         Log4j.info("Go to book ticket page");
         homePage.goToBookTicket();
         Log4j.info("Verify that Login page displays instead of Book ticket page");

@@ -23,6 +23,6 @@ public class TC08 extends BaseTest {
         loginPage.login(email, password);
 
         Log4j.info("Verify: Login with random account success");
-        Assert.assertEquals(loginPage.getErrorMsg(), "Invalid username or password. Please try again.", "Login failed");
+        Assert.assertEquals(loginPage.getErrorMsgText(), "Invalid username or password. Please try again.", "Login failed");
     }
 }
