@@ -8,7 +8,7 @@ import org.railway.utils.Constant;
 
 
 public class MyTicketPage extends BasePage {
-    private final String rowTicketInfo = ("//tr//td[contains(text(),'Sài Gòn')]//following::td[contains(text(),'Quảng Ngãi')]//following::td[contains(text(),'Soft bed')]");
+    private final String rowTicketInfo = ("//tr//td[contains(text(),'%s')]//following::td[contains(text(),'%s')]//following::td[contains(text(),'%s')]");
     private final By lblNote = By.cssSelector("div#content div.message li");
     private final By ccbArriveStationFilter = By.xpath("//select[@name='FilterArStation']");
     private final By btnApplyFilter = By.xpath("//input[@value='Apply Filter']");
