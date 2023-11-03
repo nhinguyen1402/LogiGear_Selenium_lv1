@@ -20,7 +20,4 @@ public class Log4j {
         logger.error(message);
     }
 
-    public static void header(String str) {
-        info("<--------------------" + str + "-------------------->\n");
-    }
 }
